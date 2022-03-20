@@ -1,8 +1,18 @@
 <html>
-  <head>
-    
-  </head>
-  <body>
-    <p> hello </p>
-  </body>
+
+<head>
+  <script>
+    function myFunction() {
+      var number = new Date().toISOString();
+      document.getElementById("myText").innerHTML = number;
+    }
+  </script>
+</head>
+
+<body onload="myFunction()">
+
+  <h1><span id="myText"></span></h1>
+
+</body>
+
 </html>
